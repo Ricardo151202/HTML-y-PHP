@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-decive-width, initial-scale=1.0">
+    <title>Registro a la Web</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    <label for="correo">Correo Electronico:</label>
+    <input type="email" id="correo" name="correo" required><br><br>
+    <label for="telefono">Telefono:</label>
+    <input type="text" id="telefono" name=telefono" required><br><br>
+    <label>¿Como entrastes de la web?</label><br>
+    <input type="radio" id="email" name="fuente" value="Email" required>
+    <label for="email">Email</label><br>
+    <input type="radio" id="redes" name="fuente" value="Redes Sociales" required>
+    <label for="redes">Redes Sociales</label><br>
+    <input type="radio" id="amigo" name="fuente" value="Amigo" required>
+    <label for="amigo">Amigo</label><br>
+    <label for="temas_interes">Temas de Interes:</label><br>
+    <select id="temas_interes" name="temas_interes[]" multiple required>
+      <option value="Tecnologia">Tecnologia</option>
+      <option value="Educación">Educación</option>
+      <option value="Salud">Salud</option>
+      <option value="Negocios">Negocios</option>
+    </select><br><br>
+  <label>Opciones de Participacion:</label>
+  <input type="checkbox" id="certificado" name="opciones[]" value="Cerificado">
+  <label for="certificado">Deseo recibir mi certificado</label>>br>
+  <input type="checkbox" id="grabacion" name="opciones[]" value="Grabacion">
+  <label for="grabacion">Deseo recibir mi grabacion</label>>br><br>
+  <label for="comentarios">Comentarios o Preguntas:</label><br><br>
+  <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+  <input type="submit" value="Registrarse">
+    <form action="procesar_web.php" method="POST">
+        <!-- Aqui se agregarán los elementos del formulario -->
+   </form>
+</body>
+</html>
